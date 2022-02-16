@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int main(){
-	printf("Hello World\n");
+	printf("##########Console-output###\nC Programming\n###########################\n");
 
 	return 0;
 }
