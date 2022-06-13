@@ -1,0 +1,45 @@
+S_node n1, n2, n3, n4, n5, n6;
+	S_node* head ;
+	unsigned long i;
+
+	n1.data = 50 ;
+	n1.next_ptr = &n2 ;
+	n2.data = 200 ;
+	n2.next_ptr = NULL ;
+	head = &n1 ;
+	i = 0 ;
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i++ ;
+	}
+	printf("================= Add at beginning ====================\n");
+	head = &n1 ;
+	i = 0 ;
+	n3.data = 155 ;
+	LL_insert(&head, &n3, 0);
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i++ ;
+	}
+	printf("================= Add at Index 0 ========================\n");
+	head = &n3 ;
+	i = 0 ;
+	n4.data = 25 ;
+	LL_insert(&head, &n4, 1);
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i++ ;
+	}
+	printf("================= Add at Index 2 =======================\n");
+	head = &n3 ;
+	i = 0 ;
+	n5.data = 13 ;
+	LL_insert(&head, &n5, 2);
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i++ ;
+	}

@@ -1,0 +1,23 @@
+S_node n1, n2, n3 ;
+	S_node* head = &n1 ;
+
+	n1.data = 10 ;
+	n1.next_ptr = &n2 ;
+	n2.data = 20 ;
+	n2.next_ptr = &n3 ;
+	n3.data = 30 ;
+	n3.next_ptr = NULL ;
+
+	printf("================ Print List ================");
+	printf("\n");
+	LL_print(head);
+	printf("============================================");
+	printf("\n");
+
+	LL_reverse(&head);
+
+	printf("================ Print List ================");
+	printf("\n");
+	LL_print(head);
+	printf("============================================");
+	printf("\n");

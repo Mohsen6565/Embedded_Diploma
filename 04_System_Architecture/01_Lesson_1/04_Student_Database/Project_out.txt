@@ -1,0 +1,172 @@
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 1
+
+=====================================================
+Enter Student ID: 11
+Enter Student Full Name: Mohamed Mohsen
+Enter Student Height: 170
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 1
+
+=====================================================
+Enter Student ID: 12
+Enter Student Full Name: Ahmed Hossam
+Enter Student Height: 175
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 1
+
+=====================================================
+Enter Student ID: 13
+Enter Student Full Name: Hassan Ahmed
+Enter Student Height: 180
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 3
+
+=====================================================
+Student no.1:
+	ID: 11
+	Name: Mohamed Mohsen
+	Height: 170
+Student no.2:
+	ID: 12
+	Name: Ahmed Hossam
+	Height: 175
+Student no.3:
+	ID: 13
+	Name: Hassan Ahmed
+	Height: 180
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 1
+
+=====================================================
+Enter Student ID: 15
+Enter Student Full Name: Magdy Ali
+Enter Student Height: 178
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 3
+
+=====================================================
+Student no.1:
+	ID: 11
+	Name: Mohamed Mohsen
+	Height: 170
+Student no.2:
+	ID: 12
+	Name: Ahmed Hossam
+	Height: 175
+Student no.3:
+	ID: 13
+	Name: Hassan Ahmed
+	Height: 180
+Student no.4:
+	ID: 15
+	Name: Magdy Ali
+	Height: 178
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 2
+
+=====================================================
+Enter Student ID to be deleted: 13
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 3
+
+=====================================================
+Student no.1:
+	ID: 11
+	Name: Mohamed Mohsen
+	Height: 170
+Student no.2:
+	ID: 12
+	Name: Ahmed Hossam
+	Height: 175
+Student no.3:
+	ID: 15
+	Name: Magdy Ali
+	Height: 178
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 4
+
+=====================================================
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 3
+
+=====================================================
+=====================================================
+Choose one of the following options: 
+
+	1)Add Student
+	2)Delete Student
+	3)View All Students
+	4)Delete all Students
+
+Enter Option Number: 

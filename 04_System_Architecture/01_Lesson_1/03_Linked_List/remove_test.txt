@@ -1,0 +1,65 @@
+S_node n1, n2, n3, n4, n5 ;
+	S_node* head ;
+	unsigned int i = 0;
+
+	n1.data = 10 ;
+	n1.next_ptr = &n2 ;
+	n2.data = 20 ;
+	n2.next_ptr = &n3 ;
+	n3.data = 30 ;
+	n3.next_ptr = &n4 ;
+	n4.data = 40 ;
+	n4.next_ptr = &n5 ;
+	n5.data = 50 ;
+	n5.next_ptr = 0 ;
+
+	printf("================== Print Linked List ==================");
+	printf("\n");
+	head = &n1 ;
+	i = 0 ;
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i ++ ;
+	}
+	printf("=======================================================");
+	printf("\n");
+
+	printf("============== Remove 0 from Linked List ==============");
+	printf("\n");
+	head = &n1 ;
+	i = 0 ;
+	LL_remove(&head, 0);
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i ++ ;
+	}
+	printf("=======================================================");
+	printf("\n");
+
+	printf("============== Remove 1 from Linked List ==============");
+	printf("\n");
+	i = 0 ;
+	head = &n2 ;
+	LL_remove(&head, 1);
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i ++ ;
+	}
+	printf("=======================================================");
+	printf("\n");
+
+	printf("============== Remove last from Linked List ==============");
+	printf("\n");
+	i = 0 ;
+	head = &n2 ;
+	LL_remove(&head, 2);
+	while(head){
+		printf("%d : Data = %d\t Next Address = %x\n", i, head->data, head->next_ptr);
+		head = head->next_ptr ;
+		i ++ ;
+	}
+	printf("=======================================================");
+	printf("\n");
