@@ -1,66 +1,68 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* Macros */
-#define STATE_define(_s_function)	void ST_##_s_function(void)
-#define STATE(_s_function)			ST_##_s_function
+#include <stdlib.h>
+#include "State.h"
 
-/* Variables Used by State Machine*/
-unsigned long distance, speed, threshold ;
-enum {
-	waiting,
-	driving
-}state_id;
+/* Global Variables */
+unsigned long CA_distance ;
+unsigned long CA_speed ;
+unsigned long CA_threshold = 50 ;
 
-/* Prototypes */
-STATE_define(waiting);
+/* State ID*/
+enum{
+	CA_wating,
+	CA_driving
+}CA_state_id;
+
+/* State Pointer */
+void(*CA_state)(void);
+
+/* APIs */
+STATE_define(wating);
 STATE_define(driving);
 long generate_random(long l, long r, long count);
-/* State Pointer */
-void (*state)(void) ;
 
-/* Setup */
 void setup(void){
-	/* Initializations */
-	threshold = 50 ;
-	state = STATE(waiting);
+	CA_threshold = 50 ;
+	CA_state = STATE(wating);
 }
 
 int main(void){
-	volatile long delay ;
-	setup();
 
+	setup();
+	unsigned long delay ;
 	while(1){
-		state();
-		for(delay=0; delay<=1000; delay++);
+		CA_state();
+		for(delay=0; delay<=2000; delay++);
 	}
+
 
 	return 0 ;
 }
 
-STATE_define(waiting){
+STATE_define(wating){
 	/* State Action */
-	state_id = waiting ;
-	speed = 0 ;
+	CA_state_id = CA_wating ;
+	CA_speed = 0 ;
 
-	/* Read Input */
-	distance = generate_random(45, 55, 1);
+	/* Read Inputs */
+	CA_distance = generate_random(45, 55, 1);
 
-	/* Transaction step */
-	(distance <= threshold) ? (state = STATE(waiting)) : (state = STATE(driving)) ;
-	printf("Waiting State | speed = %ld | distance = %ld\n", speed, distance);
+	/* State Transaction */
+	(CA_distance <= 50)?(CA_state = STATE(wating)):(CA_state = STATE(driving));
+	printf("Waiting State | CA_speed = %ld | CA_distance = %ld\n", CA_speed, CA_distance);
 }
 
 STATE_define(driving){
 	/* State Action */
-	state_id = driving ;
-	speed = 30 ;
+	CA_state_id = CA_driving ;
+	CA_speed = 30 ;
 
-	/* Read Input */
-	distance = generate_random(45, 55, 1);
+	/* Read Inputs */
+	CA_distance = generate_random(45, 55, 1);
 
-	/* Transaction */
-	(distance <= threshold) ? (state = STATE(waiting)) : (state = STATE(driving)) ;
-	printf("Driving State | speed = %ld | distance = %ld\n", speed, distance);
+	/* State Transaction */
+	(CA_distance <= 50)?(CA_state = STATE(wating)):(CA_state = STATE(driving));
+	printf("Driving State | CA_speed = %ld | CA_distance = %ld\n", CA_speed, CA_distance);
 }
 
 long generate_random(long l, long r, long count){
@@ -70,3 +72,4 @@ long generate_random(long l, long r, long count){
 	}
 	return (long)rand_num ;
 }
+

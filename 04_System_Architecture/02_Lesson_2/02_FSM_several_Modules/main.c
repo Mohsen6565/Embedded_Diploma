@@ -1,30 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "US_sensor.h"
-#include "DC_motor.h"
+#include "US.h"
 #include "CA.h"
-
-unsigned long distance , speed , threshold ;
+#include "DC.h"
+#include "State.h"
 
 void setup(void){
-	US_init();
-	DC_init();
+	CA_threshold = 50 ;
 	CA_state = STATE(CA_waiting);
 	US_state = STATE(US_busy);
 	DC_state = STATE(DC_idle);
-	threshold = 50 ;
 }
 
 int main(void){
 
 	setup();
-	volatile unsigned long d ;
-
+	unsigned long delay ;
 	while(1){
-
+		US_state();
 		CA_state();
-		for(d=0; d<=2000; d++);
+		DC_state();
+		for(delay=0; delay<=2000; delay++);
 	}
+
 
 	return 0 ;
 }
+
+
+
+
+

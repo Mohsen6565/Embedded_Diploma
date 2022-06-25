@@ -1,40 +1,46 @@
 /*
  * CA.c
  *
- *  Created on: Jun 20, 2022
+ *  Created on: Jun 25, 2022
  *      Author: Mohamed Mohsen
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include "US_sensor.h"
-#include "DC_motor.h"
 #include "CA.h"
 
-extern unsigned long threshold ;
-
+void US_send_distance(unsigned long distance){
+	CA_distance = distance ;
+	printf("US_distance --> CA_distance\n");
+}
+void DC_send_speed(unsigned long speed){
+	DC_speed = speed ;
+	printf("CA_speed --> DC_speed\n");
+	DC_state = STATE(DC_busy);
+}
 
 STATE_define(CA_waiting){
 	/* State Action */
 	CA_state_id = CA_waiting ;
-	DC_motor_set_speed(0);
+	CA_speed = 0 ;
+	DC_send_speed(CA_speed);
 
-	/* Read Input */
-	US_state();
+	/* Reading Inputs */
+	US_send_distance(US_distance);
 
-	/* Transaction */
-	(distance <= threshold)?(CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
-	printf("CA Waiting State : \n");
+	/* State Transaction */
+	(CA_distance <= 50)?(CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+	printf("CA Waiting State | CA_speed = %ld | CA_distance = %ld\n", CA_speed, CA_distance);
 }
+
 STATE_define(CA_driving){
 	/* State Action */
 	CA_state_id = CA_driving ;
-	DC_motor_set_speed(30);
+	CA_speed = 30 ;
+	DC_send_speed(CA_speed);
 
-	/* Read Input */
-	US_state();
+	/* Reading Inputs */
+	US_send_distance(US_distance);
 
-	/* Transaction */
-	(distance <= threshold)?(CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
-	printf("CA Driving State : \n");
-
+	/* State Transaction */
+	(CA_distance <= 50)?(CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+	printf("CA Driving State | CA_speed = %ld | CA_distance = %ld\n", CA_speed, CA_distance);
 }
+
