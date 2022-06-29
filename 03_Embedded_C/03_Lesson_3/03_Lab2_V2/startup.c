@@ -50,6 +50,7 @@ void Reset_Handler(void){
 	p_des = (unsigned char*)&_S_bss ;
 	for(unsigned long i=0; i<bss_size; i++){
 		*((unsigned char*)(p_des)) = (unsigned char)0 ;
+		p_des ++ ;
 	}
 
 	/* Calling main function */

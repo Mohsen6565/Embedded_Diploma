@@ -10,6 +10,9 @@ void setup(void){
 	CA_state = STATE(CA_waiting);
 	US_state = STATE(US_busy);
 	DC_state = STATE(DC_idle);
+
+	US_init();
+	DC_init();
 }
 
 int main(void){
@@ -20,6 +23,7 @@ int main(void){
 		US_state();
 		CA_state();
 		DC_state();
+		printf("=======================================================\n");
 		for(delay=0; delay<=2000; delay++);
 	}
 
