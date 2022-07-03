@@ -11,6 +11,7 @@
 int get_user_choice(void);
 
 int main(){
+	
 	FIFO_init(&S_student_FIFO, S_students_buff, 50);
 	int choice = 0 ;
 	int num ;
@@ -82,7 +83,7 @@ int main(){
 			printf("Enter Course Number: ");
 			fflush(stdin); fflush(stdout);
 			scanf("%d", &num);
-			SM_get_getail_course_id(&S_student_FIFO, num);
+			SM_get_detail_course_id(&S_student_FIFO, num);
 		}break;
 		case 6:{
 			/* Get Total Number of Students */

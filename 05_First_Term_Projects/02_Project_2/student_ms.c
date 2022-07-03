@@ -24,7 +24,6 @@ int SM_roll_exists(int r){
 }
 
 void SM_add_student_manually(FIFO_buff_t* fifo, FIFO_DATA_TYPE item){
-	/* Check if we can add one more student ******************* */
 	/* Check if the roll number is duplicated ******************* */
 	if(SM_roll_exists(item.roll)){
 		printf("[ERROR] Repeated Roll Number\n");
@@ -120,7 +119,7 @@ void SM_get_detail_roll(FIFO_buff_t* fifo, int roll_n){
 				printf("Course %d ID:%d \n", j, temp->course_id[j-1]);
 			}
 		}
-		if(temp == (fifo->base + fifo->length - 1 - 1)){
+		if(temp == (fifo->base + fifo->length - 1)){
 			temp = fifo->base ;
 		}else{
 			temp ++ ;
@@ -159,7 +158,7 @@ void SM_get_detail_f_name(FIFO_buff_t* fifo, char f_name[]){
 	}
 }
 
-void SM_get_getail_course_id(FIFO_buff_t* fifo, int course_n){
+void SM_get_detail_course_id(FIFO_buff_t* fifo, int course_n){
 	FIFO_DATA_TYPE* temp = fifo->tail ;
 	int j = -1 ;
 	printf("======= Course ID = %d =======\n", course_n);
@@ -206,29 +205,35 @@ void SM_delete_roll(FIFO_buff_t* fifo, int roll_n){
 		}
 	}
 
-	temp = roll_ptr + 1 ;
-	if(temp > (fifo->base + fifo->length - 1)){
-		temp = fifo->base ;
-	}
-	while(temp != fifo->head){
-
-		*((FIFO_DATA_TYPE*)(roll_ptr)) = *((FIFO_DATA_TYPE*)(temp)) ;
-
-		if(temp == (fifo->base + fifo->length - 1)){
+	if(roll_ptr == NULL){
+		printf("[ERROR] Roll Number Not Found!\n");
+	}else{
+		temp = roll_ptr + 1 ;
+		if(temp > (fifo->base + fifo->length - 1)){
 			temp = fifo->base ;
-		}else{
-			temp ++ ;
 		}
-		if(roll_ptr == (fifo->base + fifo->length - 1)){
-			roll_ptr = fifo->base ;
-		}else{
-			roll_ptr ++ ;
-		}
+		while(temp != fifo->head){
 
+			*((FIFO_DATA_TYPE*)(roll_ptr)) = *((FIFO_DATA_TYPE*)(temp)) ;
+
+			if(temp == (fifo->base + fifo->length - 1)){
+				temp = fifo->base ;
+			}else{
+				temp ++ ;
+			}
+			if(roll_ptr == (fifo->base + fifo->length - 1)){
+				roll_ptr = fifo->base ;
+			}else{
+				roll_ptr ++ ;
+			}
+
+		}
+		*((FIFO_DATA_TYPE*)(roll_ptr)) = *((FIFO_DATA_TYPE*)(temp)) ;
+		fifo->head = roll_ptr;
+		fifo->count -- ;
 	}
-	*((FIFO_DATA_TYPE*)(roll_ptr)) = *((FIFO_DATA_TYPE*)(temp)) ;
-	fifo->head = roll_ptr;
-	fifo->count -- ;
+
+
 
 }
 
