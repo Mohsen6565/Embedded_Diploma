@@ -10,8 +10,11 @@
 
 #include "fifo.h"
 #include "types.h"
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+#define LINE_SIZE 255
 
 /* Students */
 FIFO_buff_t S_student_FIFO ;
@@ -20,7 +23,7 @@ S_student S_students_buff[50];
 /* API */
 int SM_roll_exists(int r);
 void SM_add_student_manually(FIFO_buff_t* fifo, FIFO_DATA_TYPE item);
-void SM_add_student_file(void);
+void SM_add_student_file(FIFO_buff_t* fifo, char file_path[]);
 void SM_get_detail_roll(FIFO_buff_t* fifo, int roll_n);
 void SM_get_detail_f_name(FIFO_buff_t* fifo, char f_name[]);
 void SM_get_getail_course_id(FIFO_buff_t* fifo, int course_n);

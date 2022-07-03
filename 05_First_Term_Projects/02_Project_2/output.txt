@@ -1,0 +1,469 @@
+Welcome To The Student Management System
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 2
+Enter File Path: data.txt
+Roll Number: 1
+First Name: Mohamed
+Last Name: Mohsen
+GPA: 3.9
+Course 1 ID: 1
+Course 2 ID: 2
+Course 3 ID: 3
+Course 4 ID: 4
+Course 5 ID: 5
+
+[INFO] Student Details are added successfully
+------------------------------------
+[INFO] Total Number of Students: 1
+[INFO] You can add up to 50 Students
+[INFO] You can add 49 more Students
+------------------------------------
+Roll Number: 2
+First Name: Ali
+Last Name: Hossam
+GPA: 4.0
+Course 1 ID: 7
+Course 2 ID: 8
+Course 3 ID: 9
+Course 4 ID: 10
+Course 5 ID: 11
+
+[INFO] Student Details are added successfully
+------------------------------------
+[INFO] Total Number of Students: 2
+[INFO] You can add up to 50 Students
+[INFO] You can add 48 more Students
+------------------------------------
+Roll Number: 3
+First Name: Sayed
+Last Name: Hamed
+GPA: 3.8
+Course 1 ID: 11
+Course 2 ID: 7
+Course 3 ID: 5
+Course 4 ID: 13
+Course 5 ID: 3
+
+[INFO] Student Details are added successfully
+------------------------------------
+[INFO] Total Number of Students: 3
+[INFO] You can add up to 50 Students
+[INFO] You can add 47 more Students
+------------------------------------
+Roll Number: 10
+First Name: Mustafa
+Last Name: Mandour
+GPA: 3.7
+Course 1 ID: 15
+Course 2 ID: 1
+Course 3 ID: 4
+Course 4 ID: 8
+Course 5 ID: 2
+[INFO] Student Details are added successfully
+------------------------------------
+[INFO] Total Number of Students: 4
+[INFO] You can add up to 50 Students
+[INFO] You can add 46 more Students
+------------------------------------
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 1
+--------------------------------
+Add the student details
+--------------------------------
+Enter The Roll Number: 4
+Enter The First Name: Baseem
+Enter The Last Name: Saleh
+Enter The GPA: 3.2
+Enter The Course ID of each Course:
+Course 1 ID: 5
+Course 2 ID: 4
+Course 3 ID: 17
+Course 4 ID: 2
+Course 5 ID: 6
+[INFO] Student Details are added successfully
+------------------------------------
+[INFO] Total Number of Students: 5
+[INFO] You can add up to 50 Students
+[INFO] You can add 45 more Students
+------------------------------------
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 1
+--------------------------------
+Add the student details
+--------------------------------
+Enter The Roll Number: 10
+Enter The First Name: Ahmad
+Enter The Last Name: Mohamed
+Enter The GPA: 3.5
+Enter The Course ID of each Course:
+Course 1 ID: 1
+Course 2 ID: 2
+Course 3 ID: 3
+Course 4 ID: 4
+Course 5 ID: 5
+[ERROR] Repeated Roll Number
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 3
+--------------------------------
+Enter Roll Number: 10
+======= Roll Number = 10 =======
+=====================================================
+Roll Number: 10
+First Name: Mustafa
+Last Name: Mandour
+GPA: 3.700000
+Course 1 ID:15
+Course 2 ID:1
+Course 3 ID:4
+Course 4 ID:8
+Course 5 ID:2
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 4
+--------------------------------
+Enter First Name: Mohamed
+======= First Name = Mohamed =======
+=====================================================
+Roll Number: 1
+First Name: Mohamed
+Last Name: Mohsen
+GPA: 3.900000
+Course 1 ID:1
+Course 2 ID:2
+Course 3 ID:3
+Course 4 ID:4
+Course 5 ID:5
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 5
+--------------------------------
+Enter Course Number: 1
+======= Course ID = 1 =======
+=====================================================
+Roll Number: 1
+First Name: Mohamed
+Last Name: Mohsen
+GPA: 3.900000
+Course 1 ID:1
+Course 2 ID:2
+Course 3 ID:3
+Course 4 ID:4
+Course 5 ID:5
+=====================================================
+Roll Number: 10
+First Name: Mustafa
+Last Name: Mandour
+GPA: 3.700000
+Course 1 ID:15
+Course 2 ID:1
+Course 3 ID:4
+Course 4 ID:8
+Course 5 ID:2
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 6
+--------------------------------
+Total Number of Students is: 5
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 8
+Enter Roll Number:10
+--------------------------------
+Add the student details
+--------------------------------
+Enter The Roll Number: 11
+Enter The First Name: Mostafa
+Enter The Last Name: Hussein
+Enter The GPA: 3.9
+Enter The Course ID of each Course:
+Course 1 ID: 1
+Course 2 ID: 5
+Course 3 ID: 8
+Course 4 ID: 9
+Course 5 ID: 17
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 9
+=====================================================
+Roll Number: 1
+First Name: Mohamed
+Last Name: Mohsen
+GPA: 3.900000
+Course 1 ID:1
+Course 2 ID:2
+Course 3 ID:3
+Course 4 ID:4
+Course 5 ID:5
+=====================================================
+Roll Number: 2
+First Name: Ali
+Last Name: Hossam
+GPA: 4.000000
+Course 1 ID:7
+Course 2 ID:8
+Course 3 ID:9
+Course 4 ID:10
+Course 5 ID:11
+=====================================================
+Roll Number: 3
+First Name: Sayed
+Last Name: Hamed
+GPA: 3.800000
+Course 1 ID:11
+Course 2 ID:7
+Course 3 ID:5
+Course 4 ID:13
+Course 5 ID:3
+=====================================================
+Roll Number: 11
+First Name: Mostafa
+Last Name: Hussein
+GPA: 3.900000
+Course 1 ID:1
+Course 2 ID:5
+Course 3 ID:8
+Course 4 ID:9
+Course 5 ID:17
+=====================================================
+Roll Number: 4
+First Name: Baseem
+Last Name: Saleh
+GPA: 3.200000
+Course 1 ID:5
+Course 2 ID:4
+Course 3 ID:17
+Course 4 ID:2
+Course 5 ID:6
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 7
+--------------------------------
+Enter Roll Number: 11
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 9
+=====================================================
+Roll Number: 1
+First Name: Mohamed
+Last Name: Mohsen
+GPA: 3.900000
+Course 1 ID:1
+Course 2 ID:2
+Course 3 ID:3
+Course 4 ID:4
+Course 5 ID:5
+=====================================================
+Roll Number: 2
+First Name: Ali
+Last Name: Hossam
+GPA: 4.000000
+Course 1 ID:7
+Course 2 ID:8
+Course 3 ID:9
+Course 4 ID:10
+Course 5 ID:11
+=====================================================
+Roll Number: 3
+First Name: Sayed
+Last Name: Hamed
+GPA: 3.800000
+Course 1 ID:11
+Course 2 ID:7
+Course 3 ID:5
+Course 4 ID:13
+Course 5 ID:3
+=====================================================
+Roll Number: 4
+First Name: Baseem
+Last Name: Saleh
+GPA: 3.200000
+Course 1 ID:5
+Course 2 ID:4
+Course 3 ID:17
+Course 4 ID:2
+Course 5 ID:6
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 7
+--------------------------------
+Enter Roll Number: 4
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 9
+=====================================================
+Roll Number: 1
+First Name: Mohamed
+Last Name: Mohsen
+GPA: 3.900000
+Course 1 ID:1
+Course 2 ID:2
+Course 3 ID:3
+Course 4 ID:4
+Course 5 ID:5
+=====================================================
+Roll Number: 2
+First Name: Ali
+Last Name: Hossam
+GPA: 4.000000
+Course 1 ID:7
+Course 2 ID:8
+Course 3 ID:9
+Course 4 ID:10
+Course 5 ID:11
+=====================================================
+Roll Number: 3
+First Name: Sayed
+Last Name: Hamed
+GPA: 3.800000
+Course 1 ID:11
+Course 2 ID:7
+Course 3 ID:5
+Course 4 ID:13
+Course 5 ID:3
+=====================================================
+Choose The Task you want to perform
+1) Add Student Data Manually
+2) Add Student Data From a Text File
+3) Get Student Details by Roll Number
+4) Get Student Details by First Name
+5) Get Students' Details by Course Number
+6) Get Total Number of Students
+7) Delete The Student Details by Roll Number
+8) Update The Student Details by Roll Number
+9) Show all information
+10) To Exit
+Enter Your Choice To Perform The Task: 10

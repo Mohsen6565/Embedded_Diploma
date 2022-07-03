@@ -35,12 +35,55 @@ void SM_add_student_manually(FIFO_buff_t* fifo, FIFO_DATA_TYPE item){
 		printf("[INFO] Total Number of Students: %ld\n", fifo->count);
 		printf("[INFO] You can add up to %ld Students\n", fifo->length);
 		printf("[INFO] You can add %ld more Students\n", fifo->length - fifo->count);
+		printf("------------------------------------\n");
 	}
 
 }
 
-void SM_add_student_file(void){
+void SM_add_student_file(FIFO_buff_t* fifo, char file_path[]){
+	FIFO_DATA_TYPE item ;
+	FILE * fpointer = NULL ;
+	char line[LINE_SIZE] ;
+	char* piece = NULL ;
+	int i = 0 ;
 
+	fpointer = fopen(file_path, "r");
+	while(!feof(fpointer)){
+		fgets(line, LINE_SIZE, fpointer);
+		/* Split line by space */
+		piece = strtok(line, " ");
+		i = 0 ;
+		while(piece != NULL){
+			switch(i){
+				case 0:{
+					printf("Roll Number: %s\n", piece);
+					item.roll = atoi(piece);
+				}break;
+				case 1:{
+					printf("First Name: %s\n", piece);
+					strcpy(item.first_name, piece);
+				}break;
+				case 2:{
+					printf("Last Name: %s\n", piece);
+					strcpy(item.last_name, piece);
+				}break;
+				case 3:{
+					printf("GPA: %s\n", piece);
+					item.gpa = atof(piece);
+				}break;
+				default:{
+					if(i<9){
+						printf("Course %d ID: %s\n", i-3, piece);
+						item.course_id[i-4] = atoi(piece);
+					}
+				}break;
+			}
+			i ++ ;
+			piece = strtok(NULL, " ");
+		}
+		SM_add_student_manually(fifo, item);
+	}
+	fclose(fpointer);
 }
 
 void SM_show(FIFO_buff_t* fifo){

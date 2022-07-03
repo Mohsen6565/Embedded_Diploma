@@ -15,6 +15,7 @@ int main(){
 	int choice = 0 ;
 	int num ;
 	char f_name[50];
+	char file_path[255] = "data.txt";
 
 	printf("Welcome To The Student Management System\n");
 	do{
@@ -51,6 +52,13 @@ int main(){
 
 			SM_add_student_manually(&S_student_FIFO, item);
 
+		}break;
+		case 2:{
+			/* Add Student Data from a file */
+			printf("Enter File Path: ");
+			fflush(stdin); fflush(stdout);
+			gets(file_path);
+			SM_add_student_file(&S_student_FIFO, file_path);
 		}break;
 		case 3:{
 			/* Get Student Details by Roll Number */
