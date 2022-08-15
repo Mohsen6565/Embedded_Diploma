@@ -1,0 +1,12 @@
+#include <stdint.h>
+
+#define RCC_BASE
+#define RCC_CR
+
+
+int main(void)
+{
+    while(1){
+
+    }
+}

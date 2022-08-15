@@ -1,0 +1,17 @@
+#include <stdint.h>
+
+#define RCC_BASE
+#define RCC_CR			*(volatile uint_32 *)(RCC_BASE + 0x00)
+#define RCC_CFGR		*(volatile uint_32 *)(RCC_BASE + 0x04)
+
+int main(void)
+{
+	// Enable High Speed Internal Clock
+	RCC_CR |= 1<<0 ;
+	// Setting system Clock as HSI
+	RCC_CFGR |=
+
+    while(1){
+
+    }
+}

@@ -1,0 +1,12 @@
+#include <stdint.h>
+
+#define RCC_BASE
+#define RCC_CR			*(volatile uint_32 *)(RCC_BASE + 0x00)
+
+
+int main(void)
+{
+    while(1){
+
+    }
+}

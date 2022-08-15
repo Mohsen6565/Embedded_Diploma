@@ -1,0 +1,21 @@
+!SESSION 2022-08-15 11:12:45.973 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-08-15 11:13:09.167
+!MESSAGE Log4j initialized with config file J:\Embedded_Systems\Learn_In_Depth\Lab2_2\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-08-15 11:13:12.802
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2022-08-15 11:13:13.531
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-08-15 11:14:23.555
+!MESSAGE Indexed 'Lab2_2STMCube' (0 sources, 0 headers) in 0.005 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-08-15 11:14:27.718
+!MESSAGE Indexed 'Lab2_2STMCube' (2 sources, 0 headers) in 0.025 sec: 67 declarations; 43 references; 10 unresolved inclusions; 0 syntax errors; 24 unresolved names (18%)

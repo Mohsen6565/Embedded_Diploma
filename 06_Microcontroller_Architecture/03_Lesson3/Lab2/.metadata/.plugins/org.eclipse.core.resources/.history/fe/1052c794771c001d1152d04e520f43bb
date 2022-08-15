@@ -1,0 +1,23 @@
+#include <stdint.h>
+
+#define RCC_BASE
+#define RCC_CR			*(volatile uint_32 *)(RCC_BASE + 0x00)
+#define RCC_CFGR		*(volatile uint_32 *)(RCC_BASE + 0x04)
+
+int main(void)
+{
+	// Enable High Speed Internal Clock
+	RCC_CR |= 1<<0 ;
+	// Setting system Clock as HSI
+	RCC_CFGR &= ~(0xFFFFFFFC);
+	// Setting AHB Scaler "System Clock Prescaler" SYSCLK
+	RCC_CFGR &= ~(0xFFFFFF0F);
+	// Setting APB1 Scaler "PCLK1" to divide by 2
+	RCC_CFGR |= (0b100)<<8 ;
+	// Setting APB2 Scaler "PCLK2" to divide by 4
+	RCC_CFGR |= (0b100)<<8 ;
+
+	while(1){
+
+	}
+}
