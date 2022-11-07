@@ -1,0 +1,20 @@
+23:40:57 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1156	      8	   1568	   2732	    aac	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+ 
+Finished building: Lesson3_Lab.bin
+ 
+ 
+
+23:40:57 Build Finished. 0 errors, 0 warnings. (took 613ms)
+

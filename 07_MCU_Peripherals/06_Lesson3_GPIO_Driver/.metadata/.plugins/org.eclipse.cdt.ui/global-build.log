@@ -1,0 +1,723 @@
+02:29:41 **** Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-size   Lesson3_Lab.elf 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+03:29:16 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+03:29:18 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+03:30:54 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+03:30:56 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+03:31:18 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+ 
+ 
+Finished building: Lesson3_Lab.list
+ 
+03:31:57 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:8:0:
+../Src/main.c: In function 'main':
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/STM32_F103C6.h:97:32: error: expected ')' before '*' token
+ #define GPIOA  ((GPIO_Typedef_t*)(GPIOA_BASE))
+                                ^
+../Src/main.c:12:17: note: in expansion of macro 'GPIOA'
+  GPIO_Typedef_t GPIOA ;
+                 ^~~~~
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/STM32_F103C6.h:97:34: error: expected ')' before '(' token
+ #define GPIOA  ((GPIO_Typedef_t*)(GPIOA_BASE))
+                                  ^
+../Src/main.c:12:17: note: in expansion of macro 'GPIOA'
+  GPIO_Typedef_t GPIOA ;
+                 ^~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+03:32:10 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:12:17: warning: unused variable 'GPIOx' [-Wunused-variable]
+  GPIO_Typedef_t GPIOx ;
+                 ^~~~~
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+ 
+Finished building: Lesson3_Lab.bin
+ 
+ 
+03:46:56 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:8:0:
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/STM32_F103C6.h:137:8: error: no macro name given in #define directive
+ #define
+        ^
+../Src/main.c: In function 'main':
+../Src/main.c:12:17: warning: unused variable 'GPIOx' [-Wunused-variable]
+  GPIO_Typedef_t GPIOx ;
+                 ^~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+03:52:10 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:12:17: warning: unused variable 'GPIOx' [-Wunused-variable]
+  GPIO_Typedef_t GPIOx ;
+                 ^~~~~
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+ 
+03:57:11 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+ 
+04:02:05 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:8:10: fatal error: STM32_F103C6.h: No such file or directory
+ #include "STM32_F103C6.h"
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+04:02:34 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+06:13:34 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+../Src/main.c: In function 'MCAL_GPIO_init':
+../Src/main.c:12:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../Src/main.c:16:1: error: expected '{' at end of input
+ }
+ ^
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c: In function 'MCAL_GPIO_init':
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:9:0: error: expected '{' at end of input
+ 
+ 
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_GPIO.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+06:14:41 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.bin
+ 
+Finished building: Lesson3_Lab.list
+ 
+06:17:12 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+Finished building: Lesson3_Lab.list
+ 
+ 
+ 
+06:28:20 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+06:28:47 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+06:29:11 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.bin
+Finished building: Lesson3_Lab.list
+ 
+ 
+06:29:48 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+14:57:33 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c: In function 'MCAL_GPIO_init':
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:31:55: error: expected expression before ')' token
+    (piny->GPIO_pin_mode == GPIO_MODE_INPUT_ANALOG) || ){
+                                                       ^
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:24:21: warning: variable 'config_reg' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* config_reg ;
+                     ^~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_GPIO.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:58:16 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c: In function 'MCAL_GPIO_init':
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:24:21: warning: variable 'config_reg' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* config_reg ;
+                     ^~~~~~~~~~
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: Lesson3_Lab.list
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.bin
+ 
+ 
+15:03:38 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c: In function 'MCAL_GPIO_init':
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:24:34: error: 'NULL' undeclared (first use in this function)
+  volatile uint32_t* config_reg = NULL ;
+                                  ^~~~
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:24:34: note: each undeclared identifier is reported only once for each function it appears in
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:24:21: warning: variable 'config_reg' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* config_reg = NULL ;
+                     ^~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_GPIO.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:04:10 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c: In function 'MCAL_GPIO_init':
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:26:21: warning: variable 'config_reg' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* config_reg = NULL ;
+                     ^~~~~~~~~~
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+ 
+Finished building: Lesson3_Lab.list
+ 
+ 
+15:49:13 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: Lesson3_Lab.bin
+Finished building: Lesson3_Lab.list
+Finished building: default.size.stdout
+ 
+ 
+ 
+16:29:27 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.bin
+Finished building: Lesson3_Lab.list
+ 
+ 
+16:59:18 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.bin
+ 
+Finished building: Lesson3_Lab.list
+ 
+17:37:55 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+22:45:13 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:109:9: error: conflicting types for 'MCAL_GPIO_ReadPin'
+ uint8_t MCAL_GPIO_ReadPin(GPIO_Typedef_t* GPIOx, uint8_t pin_number){
+         ^~~~~~~~~~~~~~~~~
+In file included from ../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c:10:0:
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc/STM32_F103C6_GPIO.h:89:9: note: previous declaration of 'MCAL_GPIO_ReadPin' was here
+ uint8_t MCAL_GPIO_ReadPin(GPIO_Typedef_t* GPIOx, GPIO_pin_config_t* piny);
+         ^~~~~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/subdir.mk:18: STM32_F103C6_Drivers/STM32_F103C6_GPIO.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:46:11 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+ 
+ 
+Finished building: Lesson3_Lab.list
+ 
+22:47:34 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+ 
+Finished building: Lesson3_Lab.list
+ 
+ 
+22:48:31 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+ 
+Finished building: Lesson3_Lab.list
+ 
+ 
+22:49:48 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+23:00:51 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+ 
+Finished building: Lesson3_Lab.list
+ 
+ 
+23:22:54 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/Debug/../Src/main.c:22: undefined reference to `MCAL_GPIO_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Lesson3_Lab.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+23:23:35 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/Debug/../Src/main.c:22: undefined reference to `MCAL_GPIO_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Lesson3_Lab.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+23:24:43 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/Debug/../Src/main.c:22: undefined reference to `MCAL_GPIO_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: Lesson3_Lab.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+23:25:52 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:17:20: warning: variable 'PinConfig' set but not used [-Wunused-but-set-variable]
+  GPIO_pin_config_t PinConfig ;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    684	      8	   1568	   2260	    8d4	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.bin
+Finished building: Lesson3_Lab.list
+ 
+ 
+23:27:41 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/STM32_F103C6_GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/STM32_F103C6_GPIO.d" -MT"STM32_F103C6_Drivers/STM32_F103C6_GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/STM32_F103C6_GPIO.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    948	      8	   1568	   2524	    9dc	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+ 
+Finished building: Lesson3_Lab.bin
+ 
+ 
+23:28:51 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    948	      8	   1568	   2524	    9dc	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+23:29:20 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    948	      8	   1568	   2524	    9dc	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+23:32:19 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+    928	      8	   1568	   2504	    9c8	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+ 
+Finished building: Lesson3_Lab.bin
+ 
+ 
+23:37:17 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1172	      8	   1568	   2748	    abc	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.bin
+Finished building: Lesson3_Lab.list
+ 
+ 
+ 
+23:40:34 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1140	      8	   1568	   2716	    a9c	Lesson3_Lab.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson3_Lab.list
+Finished building: Lesson3_Lab.bin
+ 
+ 
+23:40:57 **** Incremental Build of configuration Debug for project Lesson3_Lab ****
+make -j4 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers" -I"G:/Git_Repositories/Embedded_Diploma/07_MCU_Peripherals/06_Lesson3_GPIO_Driver/Lesson3_Lab/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Lesson3_Lab.elf" @"objects.list"   -mcpu=cortex-m3 -T"G:\Git_Repositories\Embedded_Diploma\07_MCU_Peripherals\06_Lesson3_GPIO_Driver\Lesson3_Lab\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson3_Lab.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson3_Lab.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson3_Lab.elf  > "Lesson3_Lab.list"
+arm-none-eabi-objcopy  -O binary  Lesson3_Lab.elf  "Lesson3_Lab.bin"
+arm-none-eabi-size   Lesson3_Lab.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1156	      8	   1568	   2732	    aac	Lesson3_Lab.elf
+Finished building: default.size.stdout
+Finished building: Lesson3_Lab.list
+ 
+Finished building: Lesson3_Lab.bin
+ 
+ 
